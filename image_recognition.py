@@ -19,7 +19,7 @@ image_bytes = buffered.getvalue()
 base64 = base64.b64encode(image_bytes)  #to base64
 base64_string = base64.decode('utf-8')   #to string
 
-
+#requests or curl whatever you like, this interacts with the ollama api that serves the model
 response = requests.post("http://localhost:11434/api/generate", json={
     "model": "gemma3:12b",
     "prompt": "What's in this image, give information about the image like where its from, if possible.",
