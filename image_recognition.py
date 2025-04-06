@@ -20,7 +20,6 @@ base64 = base64.b64encode(image_bytes)  #to base64
 base64_string = base64.decode('utf-8')   #to string
 
 
-# Send image and prompt to Ollama (assuming 'llava' model is running)
 response = requests.post("http://localhost:11434/api/generate", json={
     "model": "gemma3:12b",
     "prompt": "What's in this image, give information about the image like where its from, if possible.",
