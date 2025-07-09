@@ -1,5 +1,5 @@
 # highlight text, loads into model from clipboard
-Bind 'llm_read_clipboard.sh' to some shortcut like 'ctrl + 5' .  Mark text, press shortcut : instance of llm outputs information about the selected field of text.  Works instantaneously, no need to go online, terminates after use.
+First make the .sh file executable by running 'chmod +x /path/to/filename.sh' , then bind 'llm_read_clipboard.sh' to some shortcut like 'ctrl + 5' .  Mark text, press shortcut : instance of llm outputs information about the selected field of text.  Works instantaneously, no need to go online, terminates after use.
 
 # launch_ollama.sh
 Just a short script to bind to a key and load up an instance of any llm on key-press, I use 'ctrl + 4' on desktop or the copilot button on laptop.
